@@ -14,7 +14,7 @@ This is an AttractMode layout based off of the look and feel of a typical game s
 -Other console systems can display on a Generic TV, 
 -Other computer systems can display on a Generic PC
 
-![Image of TeenWolf Layout](https://raw.githubusercontent.com/mahuti/Teenwolf/master/thumb.png)
+![Image of TeenWolf Layout](https://raw.githubusercontent.com/mahuti/Teenwolf/master/thumb.jpg)
 
 ### Requires: 
 - Pos module https://github.com/mahuti/Pos-Module
@@ -25,7 +25,7 @@ This is an AttractMode layout based off of the look and feel of a typical game s
 - wheel: wheel logos 
 - cartridge: cartridge art is all front-facing art except for NES and Atari which use images of the spine of the cartridge (just the label)
 
-I assume that you'll use Hyperspin & Emumovies assets for videosnaps, flyers, etc. Other versions may not fit as well as those. 
+I used Hyperspin & Emumovies assets for videosnaps, flyers, etc. Other versions may not fit as well as those. 
 
 ### Features: 
 - Themes is scalable to any size or orientation
@@ -33,6 +33,10 @@ I assume that you'll use Hyperspin & Emumovies assets for videosnaps, flyers, et
 - Realistically scaled console & controller images 
 - Image/Names are based on US console versions
 - Works for multiple emulators
+- Posters in background can be replaced with your own images (or hidden)
+- Screen glow, screen bloom, and scanlines can be adjusted or hidden
+- Game titles and playtime can be shown or hidden
+- Scales to any size
 
 ### Usage Instructions: 
 There are 2 methods: 

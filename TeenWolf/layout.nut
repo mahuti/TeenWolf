@@ -29,7 +29,14 @@ class UserConfig {
         per_display="true",
 		options="Auto, Random, None" /> 
 		posters="Auto"; 
-    
+ 
+    </ label="Wall Color", 
+        help="Wall color can be changed to suit your taste", 
+        order=order++, 
+        per_display="true",
+        options="Blue, Off-White, Red" /> 
+        wall_color="Blue"; 
+
     </ label="Show CRT bloom or lottes shaders", 
         help="Enable bloom or lottes effects for the snap video, if user device supports GLSL shaders", 
         options="No,CRT Bloom,CRT Lottes", 
@@ -128,6 +135,7 @@ prefs.show_playtime <-  config["show_playtime"]
 prefs.game_titles <-  config["game_titles"]
 prefs.cartridge_folder <-  config["cartridge_folder"]
 prefs.posters <-  config["posters"]
+prefs.wall_color <- config["wall_color"]
 
 local snap_x, snap_y, snap_w, snap_h, cart_x, cart_y, cart_width, cart_height, cart_pinch_x, cart_pinch_y, boxart, boxart_x, boxart_y, boxart_width, boxart_height, boxart_shadows, boxart_shadow, boxart_folder, wheel_x, wheel_y, wheel_width, wheel_height, console_image, console_x, console_y, console_width, console_height, console_overlay, console_overlay_x, console_overlay_y, console_overlay_width, console_overlay_height, controller, controller_x, controller_y, controller_width, controller_height, cart_preserve_aspect_ratio, screen, screen_x, screen_y, screen_width, screen_height, bg_x, bg_y, posData, scale, stretch, beginning_offset_x, beginning_offset_y, console, tv, show_playtime, game_titles, cartridge, cartridge_folder, poster_shadow, bg, bg_grid, poster_shadow_orig_height, poster_left, poster_right, poster1, poster2, poster1_width, poster1_height, poster1_x, poster1_y, poster2_width, poster2_height, poster2_x, poster2_y, poster_left_width, poster_left_height, poster_right_width, poster_right_height, snap, snap_video, scanlines_srf, crt_scanlines, black_background, posters, posters_alpha, wall
 
@@ -520,9 +528,18 @@ switch(prefs.tv)
 //Background
 //images.bg_grid <- fe.add_image("Position Grid Black.jpg", 0, 0, scale.width(1920), scale.height(1080))
 images.wall <- fe.add_image("assets/painted_wall_white.jpg",0,0, fe.layout.width, fe.layout.height)
-images.wall.set_rgb(19,25,31)//dark-blue
-//wall.set_rgb(255,0,0)//red
-//wall.set_rgb(179,178,130)//yellow-white
+
+switch (prefs.wall_color)
+{
+    case "Off-White": 
+        images.wall.set_rgb(179,178,130)//yellow-white
+        break
+    case "Red": 
+        images.wall.set_rgb(255,0,0)//red
+        break
+    default: 
+        images.wall.set_rgb(19,25,31)//dark-blue
+}
 
 //images.positioning <- fe.add_image("positioning2.jpg", 0, 0, scale.width(1920), scale.height(1080))
 //images.positioning.alpha = 255
