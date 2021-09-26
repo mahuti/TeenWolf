@@ -3,16 +3,16 @@ Attract Mode: Game room layout
 <!-- Original post: http://forum.attractmode.org/index.php?topic=1261.msg11687#msg11687 --> 
 
 This is an AttractMode layout based off of the look and feel of a typical game setup from the 80's. It has styles for the following consoles: 
--Atari 2600 
--Intellivision 
--Nintendo NES
--Nintendo SNES
--Nintendo 64
--ScummVM
--Sega Genesis
--Sony Playstation
--Other console systems can display on a Generic TV, 
--Other computer systems can display on a Generic PC
+- Atari 2600 
+- Intellivision 
+- Nintendo NES
+- Nintendo SNES
+- Nintendo 64
+- ScummVM
+- Sega Genesis
+- Sony Playstation
+- Other console systems can display on a Generic TV, 
+- Other computer systems can display on a Generic PC
 
 ![Image of TeenWolf Layout](https://raw.githubusercontent.com/mahuti/Teenwolf/master/thumb.jpg)
 
